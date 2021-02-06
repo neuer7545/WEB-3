@@ -5,7 +5,7 @@
   <!--머리 -->
   <head>
     <!-- 제목-->
-    <title> 연습 14.1 (객체의 활용) </title>
+    <title> 연습 14 (객체의 활용) </title>
     <!-- utf-8 -->
     <meta charset="utf-8">
     <style>
@@ -24,12 +24,32 @@
 </script>
 <!-- 버튼에 대한 함수 -->
 <script>
-  function NightDayHandler(self){
-    var target = document.querySelector('body');
-    if(self.value === 'night'){
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
-      self.value = 'day';
+var Links =  {
+setColor:function(color){
+  var alist = document.querySelectorAll('a')
+  var i = 0;
+  while (i < alist.length){
+    alist[i].style.color = color;
+    i = i + 1
+      }
+    }
+  }
+
+var Body = {
+  setColor:function (color){
+    document.querySelector('body').style.color = color;
+  },
+  setBackgroundColor:function (color){
+    document.querySelector('body').style.backgroundColor = color;
+  }
+}
+
+function NightDayHandler(self){
+  var target = document.querySelector('body');
+  if(self.value === 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    self.value = 'day';
 
       var alist = document.querySelectorAll('a');
       var i = 0;
@@ -37,20 +57,21 @@
         alist[i].style.color = 'powderblue';
         i = i + 1;
       }
-    } else {
-      target.style.backgroundColor = 'white';
-      target.style.color = 'black';
-      self.value = 'night';
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    self.value = 'night';
 
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length){
-        alist[i].style.color = '#0078FF';
-        i = i + 1;
-      }
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+      alist[i].style.color = '#0078FF';
+      i = i + 1;
     }
   }
-    </script>
+}
+
+</script>
   <!-- 버튼에 대한 함수 끝 -->
     </head>
       <!-- 몸 -->
@@ -102,6 +123,16 @@
           <li class="abc"><a href="ex15.3.html"> 연습 15.3 ( 객체의 활용 )</a>
           </li>
           <li class="abc"><a href="ex14.4.html"> 연습 15.4 ( 객체의 활용 )</a>
+          </li>
+          <li class="abc"><a href="ex16.1.html"> 연습 16.1 ( 라이브러리와 프래임워크 )</a>
+          </li>
+          <li class="abc"><a href="ex16.2.html"> 연습 16.2 ( 라이브러리와 프래임워크 )</a>
+          </li>
+          <li class="abc"><a href="ex16.3.html">연습 16.3 ( 라이브러리와 프래임워크 ) </a>
+          </li>
+          <li class="abc"><a href="ex16.4.html"> 연습 16.4 ( 라이브러리와 프래임워크 )</a>
+          </li>
+          <li class="abc"><a href="finish.html">finish</a>
           </li>
             <h2> 연습 14 (객체의 활용) </h2>
             <h3 class="abc"> 객체를 이용해 정리하기</h3>
