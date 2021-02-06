@@ -1,0 +1,162 @@
+<!-- HTML임을 밝힘 -->
+<!doctype html>
+<!-- HTML -->
+<html>
+  <!--머리 -->
+  <head>
+    <!-- 제목-->
+    <title> 연습 7 (배열) </title>
+    <!-- utf-8 -->
+    <meta charset="utf-8">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+    </style>
+    <!-- CSS와 연결한다 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X9H7P93TBB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X9H7P93TBB');
+</script>
+    </head>
+      <!-- 몸 -->
+      <body>
+        <h1 class="abcd"><a href="index.html"> WEB </a></h1>
+        <!-- 버튼 -->
+        <input id="night_day" type="button" value="night" onclick="
+        if(document.querySelector('#night_day').value === 'night'){
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        document.querySelector('#night_day').value = 'day';
+        } else {
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        document.querySelector('#night_day').value = 'night';
+        }
+        ">
+        <br>
+
+        <!-- 목록 -->
+          <ol>
+            <li class="abc"><a href="JavaScript-1.html"> HTML</a>
+          </li>
+          <li class="abc"><a href="JavaScript-2.html"> CSS </a>
+          </li>
+          <li class="abc"><a href="JavaScript-3.html"> JavaScript </a>
+          </li>
+          <li class="abc"><a href="ex1.html"> 연습 1 ( HTML vs JavaScript ) </a>
+          </li>
+          <li class="abc"><a href="ex2.html"> 연습 2 ( 이벤트 ) </a>
+          </li>
+          <li class="abc"><a href="ex3.html"> 연습 3 ( 야간 모드 ) </a>
+          </li>
+          <li class="abc"><a href="ex4.html"> 연습 4 ( 비교 연산자 )</a>
+          </li>
+          <li class="abc"><a href="ex5.html"> 연습 5 ( 조건문 )</a>
+          </li>
+          <li class="abc"><a href="ex5.html"> 연습 6 ( 조건문의 활용 )</a>
+          </li>
+          <li class="abc">연습 7 ( 배열 )
+          </li>
+          <li class="abc"><a href="ex8.html"> 연습 8 ( 반복문 )</a>
+          </li>
+          <li class="abc"><a href="ex9.html"> 연습 9 ( 배열과 반복문 )</a>
+          </li>
+          <li class="abc"><a href="ex10.html"> 연습 10 ( 배열과 반복문의 활용 )</a>
+          </li>
+          <li class="abc"><a href="ex11.html"> 연습 11 ( 함수 )</a>
+          </li>
+          <li class="abc"><a href="ex12.html"> 연습 12 ( 함수의 활용 )</a>
+          </li>
+          <li class="abc"><a href="ex13.html"> 연습 13 ( 객체 )</a>
+          </li>
+          <li class="abc"><a href="ex14.html"> 연습 14 ( 객체의 활용 )</a>
+          </li>
+          <li class="abc"><a href="ex15.1.html"> 연습 15.1 ( 객체의 활용 )</a>
+          </li>
+          <li class="abc"><a href="ex15.2.html"> 연습 15.2 ( 객체의 활용 )</a>
+          </li>
+          <li class="abc"><a href="ex15.3.html"> 연습 15.3 ( 객체의 활용 )</a>
+          </li>
+          <li class="abc"><a href="ex15.4.html"> 연습 15.4 ( 객체의 활용 )</a>
+          </li>
+          </ol>
+          <ol>
+        <h2> 연습 7 (배열) </h2>
+        <h3 class="abc">cowokers를 이용해 보관, 사용하기</h3>
+        <h1> Array </h1>
+
+        <h2> 1. Syntax </h2>
+         <script>
+           //* 수납함 *//
+            var cowokers = ["apple", "orange", "grape"];
+         </script>
+
+         <h2>2. get</h2>
+         =>
+          <script>
+            document.write(cowokers[0]);
+          </script>
+          ,
+          <script>
+            document.write(cowokers[1]);
+          </script>
+          ,
+          <script>
+            document.write(cowokers[2]);
+          </script>
+
+          <h2>3. add</h2>
+          <script>
+          cowokers.push("watermellon","peach")
+          </script>
+
+          <h2>4. count </h2>
+          =>
+          <script>
+            document.write(cowokers.length);
+          </script>
+      <!-- 댓글 -->
+<br>
+        <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://web-1-lr8nt6rvr7.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+      <p>
+          <!--Start of Tawk.to Script-->
+          <script type="text/javascript">
+          var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+          (function(){
+          var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+          s1.async=true;
+          s1.src='https://embed.tawk.to/5ff03e96df060f156a934e98/1er178v8q';
+          s1.charset='UTF-8';
+          s1.setAttribute('crossorigin','*');
+          s0.parentNode.insertBefore(s1,s0);
+          })();
+          </script>
+          <!--End of Tawk.to Script-->
+      </p>
+    </ol>
+      </body>
+<html>

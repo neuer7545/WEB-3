@@ -1,0 +1,52 @@
+/* css를 한곳에 모아둔다 */
+    .abcd{
+    font-weight:900;
+    }
+
+      a:link{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #228B22;
+    text-decoration-line: none;
+  }
+
+  a:visited{
+    font-family: 'Noto Sans KR', sans-serif;
+    color:#9D71BD ;
+    text-decoration-line: none;
+  }
+
+  a:hover{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #8CBDED;
+    font-size: 1.5em;
+    /*
+    border: 10px dotted #228B22;
+    padding: 10px;
+    박스 만들기
+    */
+
+    text-decoration-line: none;
+  }
+
+
+  h1{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 60px;
+    text-align: center;
+  }
+  .b{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: gray;
+    text-decoration-line: none;
+  }
+  /* selector하고 부른다 .은 class #은 id이다 */
+  .c{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #228B22;
+  }
+  h2{
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  .abc{
+    font-family: 'Noto Sans KR', sans-serif;
+  }
